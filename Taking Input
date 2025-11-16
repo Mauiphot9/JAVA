@@ -1,24 +1,24 @@
 import java.util.Scanner;
 
-public class InputExample {
+public class HelloJava {
     public static void main(String[] args) {
-
+        
         Scanner scanner = new Scanner(System.in);
 
+        // Ask for user's name
         System.out.print("Enter your name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Enter your age: ");
-        int age = scanner.nextInt();
+        // Ask for user's favorite quote
+        System.out.print("Enter your favorite quote: ");
+        String quote = scanner.nextLine();
 
-        System.out.print("Enter your grade: ");
-        double grade = scanner.nextDouble();
-
-        System.out.println("\n--- USER INFORMATION ---");
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Grade: " + grade);
+        // Print the output
+        System.out.println("\n--- OUTPUT ---");
+        System.out.println("Hello, " + name + "!");
+        System.out.println("Your favorite quote is: \"" + quote + "\"");
 
         scanner.close();
     }
 }
+
