@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class GradeCheck {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        // Ask the user to enter a grade
+        System.out.print("Enter your grade: ");
+        int grade = input.nextInt();
+
+        // Check if grade is 75 or higher
+        if (grade >= 75) {
+            System.out.println("You passed.");
+        } else {
+            System.out.println("You failed.");
+        }
+    }
+}
